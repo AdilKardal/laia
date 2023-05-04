@@ -20,7 +20,7 @@
     $req->execute();
     $produit = $req->fetch();?>
         <div class="containproduct">
-        <img src="imgproduit/<?=$produit['image_produit']?>" alt="">
+        <img src="images/<?=$produit['image_produit']?>" alt="">
         <div class="product">
             <h3><?=$produit['nom_produit']?></h3>
             <p>Pack comportant</p>
@@ -33,7 +33,7 @@
         </div>
     </div>
  
- <a href="view_coffret.php"><p>Retour aux coffrets</p></a>
+ <a class="acoff" href="view_coffret.php"><p>Retour aux coffrets</p></a>
     
 
     <?php require("view_footer.php"); ?>
